@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ruchi Negi | Graphic Designer & Video Editor</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f9ff;
+            color: #222;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 3px 20px rgba(0,0,0,0.06);
+            padding: 15px 0;
+        }
+
+
+        .navbar-brand {
+            font-size: 28px;
+            font-weight: 800;
+            color: #7c3aed !important;
+        }
+
+
+        .navbar-brand span {
+            color: #f43f5e;
+        }
+
+
+        .nav-link {
+            font-weight: 500;
+            margin-left: 15px;
+            color: #333 !important;
+            transition: 0.3s;
+        }
+
+
+        .nav-link:hover {
+            color: #7c3aed !important;
+        }
+
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+
+            background:
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(124,58,237,0.15),
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 90% 30%,
+                    rgba(244,63,94,0.15),
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 50% 90%,
+                    rgba(14,165,233,0.12),
+                    transparent 30%
+                ),
+
+                #f8f9ff;
+        }
+
+
+        .hero-small {
+            color: #7c3aed;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 78px);
+            font-weight: 800;
+            line-height: 1.05;
+            margin: 15px 0;
+        }
+
+
+        .hero h1 span {
+            background: linear-gradient(90deg, #7c3aed, #f43f5e);
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .hero p {
+            color: #666;
+            font-size: 18px;
+            max-width: 650px;
+            line-height: 1.8;
+        }
+
+
+        .btn-main {
+            background: linear-gradient(90deg, #7c3aed, #f43f5e);
+            border: none;
+            color: white;
+
+            padding: 13px 28px;
+
+            border-radius: 50px;
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+
+        .btn-main:hover {
+            transform: translateY(-3px);
+            color: white;
+
+            box-shadow:
+                0 10px 25px rgba(124,58,237,0.25);
+        }
+
+
+        .btn-outline-custom {
+            border: 2px solid #7c3aed;
+            color: #7c3aed;
+
+            padding: 11px 28px;
+
+            border-radius: 50px;
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+
+        .btn-outline-custom:hover {
+            background: #7c3aed;
+            color: white;
+        }
+
+
+
+        /* ================= HERO CREATIVE BOX ================= */
+
+        .creative-box {
+            position: relative;
+
+            height: 400px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .creative-circle {
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #f43f5e
+                );
+
+            opacity: 0.12;
+
+            position: absolute;
+
+            animation: float 4s ease-in-out infinite;
+        }
+
+
+        .creative-card {
+            position: relative;
+
+            width: 270px;
+            height: 300px;
+
+            background: white;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 20px 60px rgba(0,0,0,0.12);
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            transform: rotate(3deg);
+        }
+
+
+        .creative-card i {
+            font-size: 70px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #7c3aed,
+                    #f43f5e
+                );
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .creative-card h4 {
+            margin-top: 20px;
+            font-weight: 700;
+        }
+
+
+        .creative-card p {
+            font-size: 14px;
+            text-align: center;
+            padding: 0 25px;
+        }
+
+
+        @keyframes float {
+
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+        }
+
+
+
+        /* ================= GENERAL ================= */
+
+        section {
+            padding: 100px 0;
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+
+        .section-title small {
+            color: #7c3aed;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+        }
+
+
+        .section-title h2 {
+            font-size: 42px;
+
+            font-weight: 800;
+
+            margin-top: 10px;
+        }
+
+
+        .section-title p {
+            color: #777;
+
+            max-width: 650px;
+
+            margin: auto;
+        }
+
+
+
+        /* ================= ABOUT ================= */
+
+        .about-card {
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 40px;
+
+            box-shadow:
+                0 15px 50px rgba(0,0,0,0.06);
+        }
+
+
+        .about-card p {
+            color: #666;
+            line-height: 1.9;
+        }
+
+
+        .info-box {
+            background: #f7f4ff;
+
+            padding: 20px;
+
+            border-radius: 15px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .info-box strong {
+            color: #7c3aed;
+        }
+
+
+
+        /* ================= SKILLS ================= */
+
+        #skills {
+            background: #111827;
+            color: white;
+        }
+
+
+        #skills .section-title p {
+            color: #aaa;
+        }
+
+
+        .skill-category {
+            background: #1f2937;
+
+            padding: 30px;
+
+            border-radius: 22px;
+
+            height: 100%;
+
+            border:
+                1px solid rgba(255,255,255,0.07);
+
+            transition: 0.3s;
+        }
+
+
+        .skill-category:hover {
+            transform: translateY(-8px);
+
+            border-color: #7c3aed;
+        }
+
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #f43f5e
+                );
+
+            font-size: 28px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .skill-category h4 {
+            font-weight: 700;
+
+            margin-bottom: 20px;
+        }
+
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+
+
+        .skill-list li {
+            padding: 8px 0;
+            color: #d1d5db;
+        }
+
+
+        .skill-list li i {
+            color: #a78bfa;
+            margin-right: 8px;
+        }
+
+
+
+        /* ================= SERVICES ================= */
+
+        .service-card {
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 40px 30px;
+
+            text-align: center;
+
+            height: 100%;
+
+            box-shadow:
+                0 12px 40px rgba(0,0,0,0.06);
+
+            transition: 0.3s;
+        }
+
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+
+        .service-icon {
+            width: 75px;
+            height: 75px;
+
+            margin: auto;
+
+            border-radius: 20px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 34px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #f43f5e
+                );
+        }
+
+
+        .service-card h4 {
+            margin-top: 25px;
+            font-weight: 700;
+        }
+
+
+        .service-card p {
+            color: #777;
+            line-height: 1.8;
+        }
+
+
+
+        /* ================= PORTFOLIO ================= */
+
+        #portfolio {
+            background: #f1f3ff;
+        }
+
+
+        .project-card {
+            background: white;
+
+            border-radius: 22px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 10px 35px rgba(0,0,0,0.07);
+
+            transition: 0.3s;
+
+            height: 100%;
+        }
+
+
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+
+
+        /* PROJECT IMAGE */
+
+        .project-image {
+            width: 100%;
+            height: 240px;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: 0.4s;
+        }
+
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+
+        .project-image-wrapper {
+            height: 240px;
+
+            overflow: hidden;
+
+            background: #eee;
+        }
+
+
+        .project-content {
+            padding: 25px;
+        }
+
+
+        .project-content h4 {
+            font-weight: 700;
+        }
+
+
+        .project-content p {
+            color: #777;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        .project-tag {
+            display: inline-block;
+
+            padding: 6px 13px;
+
+            background: #f1edff;
+
+            color: #7c3aed;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            margin-right: 5px;
+
+            margin-top: 5px;
+        }
+
+
+
+        /* ================= EDUCATION ================= */
+
+        .timeline {
+            position: relative;
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        .timeline-item {
+            background: white;
+
+            padding: 30px;
+
+            margin-bottom: 25px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.06);
+
+            border-left:
+                5px solid #7c3aed;
+        }
+
+
+        .timeline-item h4 {
+            font-weight: 700;
+        }
+
+
+        .timeline-item .year {
+            color: #7c3aed;
+
+            font-weight: 600;
+        }
+
+
+        .timeline-item p {
+            color: #777;
+
+            margin-bottom: 0;
+        }
+
+
+
+        /* ================= CONTACT ================= */
+
+        .contact-section {
+            background:
+                linear-gradient(
+                    135deg,
+                    #7c3aed,
+                    #f43f5e
+                );
+
+            color: white;
+        }
+
+
+        .contact-section .section-title small {
+            color: white;
+        }
+
+
+        .contact-section .section-title p {
+            color: rgba(255,255,255,0.8);
+        }
+
+
+        .contact-card {
+            background: white;
+
+            color: #222;
+
+            padding: 40px;
+
+            border-radius: 25px;
+
+            max-width: 800px;
+
+            margin: auto;
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,0.15);
+        }
+
+
+        .contact-item {
+            display: flex;
+
+            align-items: center;
+
+            margin-bottom: 25px;
+        }
+
+
+        .contact-item i {
+            width: 50px;
+            height: 50px;
+
+            background: #f1edff;
+
+            color: #7c3aed;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 12px;
+
+            font-size: 22px;
+
+            margin-right: 15px;
+        }
+
+
+        .contact-item h6 {
+            margin-bottom: 3px;
+            font-weight: 700;
+        }
+
+
+        .contact-item p {
+            margin: 0;
+            color: #777;
+        }
+
+
+
+        /* ================= SOCIAL ================= */
+
+        .social-links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+
+        .social-links a {
+            width: 48px;
+            height: 48px;
+
+            display: inline-flex;
+
+            justify-content: center;
+            align-items: center;
+
+            background: #f1edff;
+
+            color: #7c3aed;
+
+            border-radius: 50%;
+
+            margin: 5px;
+
+            font-size: 20px;
+
+            transition: 0.3s;
+
+            text-decoration: none;
+        }
+
+
+        .social-links a:hover {
+            background: #7c3aed;
+
+            color: white;
+
+            transform: translateY(-4px);
+        }
+
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #111827;
+
+            color: #aaa;
+
+            text-align: center;
+
+            padding: 25px;
+        }
+
+
+        footer strong {
+            color: white;
+        }
+
+
+
+        /* ================= ANIMATION ================= */
+
+        .fade-up {
+            animation: fadeUp 1s ease;
+        }
+
+
+        @keyframes fadeUp {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(30px);
+            }
+
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+
+        }
+
+
+
+        /* ================= MOBILE ================= */
+
+        @media(max-width: 991px) {
+
+            .navbar-nav {
+                padding-top: 15px;
+            }
+
+
+            .nav-link {
+                margin-left: 0;
+
+                padding:
+                    10px 0 !important;
+            }
+
+
+            .creative-box {
+                margin-top: 40px;
+            }
+
+
+            .hero {
+                text-align: center;
+            }
+
+
+            .hero p {
+                margin: auto;
+            }
+
+        }
+
+
+        @media(max-width: 576px) {
+
+            section {
+                padding: 70px 0;
+            }
+
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+
+            .creative-box {
+                height: 330px;
+            }
+
+
+            .creative-circle {
+                width: 240px;
+                height: 240px;
+            }
+
+
+            .creative-card {
+                width: 230px;
+                height: 260px;
+            }
+
+
+            .creative-card i {
+                font-size: 55px;
+            }
+
+
+            .about-card {
+                padding: 25px;
+            }
+
+
+            .project-image-wrapper {
+                height: 220px;
+            }
+
+
+            .project-image {
+                height: 220px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+<!-- ========================================================= -->
+<!-- NAVBAR -->
+<!-- ========================================================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            RN<span>.</span>
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#home">
+                        Home
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#about">
+                        About
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#services">
+                        Services
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#portfolio">
+                        Portfolio
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#education">
+                        Education
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ========================================================= -->
+<!-- HERO -->
+<!-- ========================================================= -->
+
+<section
+    class="hero"
+    id="home">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+
+            <div
+                class="col-lg-7 fade-up">
+
+                <div class="hero-small">
+                    Hello, I'm
+                </div>
+
+
+                <h1>
+                    Ruchi
+                    <span>Negi</span>
+                </h1>
+
+
+                <h3 class="mb-3">
+                    Graphic Designer & Video Editor
+                </h3>
+
+
+                <p>
+                    I'm a creative beginner designer passionate
+                    about graphic design, video editing and
+                    web designing. I love creating clean,
+                    attractive and meaningful visual designs.
+                </p>
+
+
+                <div class="mt-4">
+
+                    <a
+                        href="#portfolio"
+                        class="btn btn-main me-2">
+
+                        View My Work
+
+                    </a>
+
+
+                    <a
+                        href="#contact"
+                        class="btn btn-outline-custom">
+
+                        Contact Me
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-5">
+
+                <div class="creative-box">
+
+                    <div class="creative-circle"></div>
+
+
+                    <div class="creative-card">
+
+                        <i class="bi bi-palette"></i>
+
+
+                        <h4>
+                            Creative Mind
+                        </h4>
+
+
+                        <p>
+                            Designing ideas into attractive
+                            visual experiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- ABOUT -->
+<!-- ========================================================= -->
+
+<section id="about">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                About Me
+            </small>
+
+
+            <h2>
+                Who I Am
+            </h2>
+
+
+            <p>
+                A creative learner building skills in design,
+                video editing and web development.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4 align-items-center">
+
+
+            <div class="col-lg-7">
+
+                <div class="about-card">
+
+                    <h3 class="fw-bold mb-4">
+                        About Me
+                    </h3>
+
+
+                    <p>
+                        My name is
+                        <strong>Ruchi Negi</strong>.
+                        I am a beginner Graphic Designer
+                        and Video Editor with an interest
+                        in creating modern and engaging
+                        visual content.
+                    </p>
+
+
+                    <p>
+                        I enjoy working with design tools,
+                        creating social media graphics,
+                        advertisements, branding concepts,
+                        motion graphics and video editing
+                        projects.
+                    </p>
+
+
+                    <p>
+                        Along with creative designing,
+                        I am also learning web designing
+                        and development technologies to
+                        build attractive and responsive
+                        websites.
+                    </p>
+
+
+                    <p class="mb-0">
+                        I am always interested in learning
+                        new skills, improving my creativity
+                        and working on new design projects.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-lg-5">
+
+                <div class="info-box">
+                    <strong>Name:</strong>
+                    Ruchi Negi
+                </div>
+
+
+                <div class="info-box">
+                    <strong>Role:</strong>
+                    Graphic Designer & Video Editor
+                </div>
+
+
+                <div class="info-box">
+                    <strong>Experience:</strong>
+                    Beginner / Fresher
+                </div>
+
+
+                <div class="info-box">
+                    <strong>Location:</strong>
+                    Delhi, India
+                </div>
+
+
+                <div class="info-box">
+                    <strong>Focus:</strong>
+                    Design, Video & Web
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- SKILLS -->
+<!-- ========================================================= -->
+
+<section id="skills">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                My Skills
+            </small>
+
+
+            <h2>
+                What I Work With
+            </h2>
+
+
+            <p>
+                My current skills and software knowledge.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- MS OFFICE -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="skill-category">
+
+                    <div class="skill-icon">
+
+                        <i class="bi bi-file-earmark-text"></i>
+
+                    </div>
+
+
+                    <h4>
+                        MS Office
+                    </h4>
+
+
+                    <ul class="skill-list">
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            MS Word
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            MS PowerPoint
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            MS Excel
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GRAPHIC DESIGN -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="skill-category">
+
+                    <div class="skill-icon">
+
+                        <i class="bi bi-brush"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Graphic Design
+                    </h4>
+
+
+                    <ul class="skill-list">
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Adobe Photoshop
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Adobe Illustrator
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Adobe InDesign
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Adobe Animate
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            CorelDRAW
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- VIDEO EDITING -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="skill-category">
+
+                    <div class="skill-icon">
+
+                        <i class="bi bi-camera-reels"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Video Editing
+                    </h4>
+
+
+                    <ul class="skill-list">
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Adobe Premiere Pro
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Adobe After Effects
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Motion Graphics
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Advertisement Videos
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WEB DESIGN -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="skill-category">
+
+                    <div class="skill-icon">
+
+                        <i class="bi bi-code-slash"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Web Designing
+                    </h4>
+
+
+                    <ul class="skill-list">
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            HTML
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            CSS
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            Bootstrap
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            WordPress
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle"></i>
+                            OpenCart
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- SERVICES -->
+<!-- ========================================================= -->
+
+<section id="services">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                Services
+            </small>
+
+
+            <h2>
+                What I Can Do
+            </h2>
+
+
+            <p>
+                Creative services I can provide as
+                a beginner designer.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- SERVICE 1 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="bi bi-palette"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Graphic Design
+                    </h4>
+
+
+                    <p>
+                        Social media posts, advertisements,
+                        posters, flyers and creative designs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="bi bi-camera-video"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Video Editing
+                    </h4>
+
+
+                    <p>
+                        Promotional videos, advertisements,
+                        motion graphics and social media videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="bi bi-window"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Web Design
+                    </h4>
+
+
+                    <p>
+                        Responsive and attractive websites
+                        using HTML, CSS and Bootstrap.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SERVICE 4 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="bi bi-stars"></i>
+
+                    </div>
+
+
+                    <h4>
+                        Creative Content
+                    </h4>
+
+
+                    <p>
+                        Creative visual content for brands,
+                        social media and digital platforms.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- PORTFOLIO -->
+<!-- ========================================================= -->
+
+<section id="portfolio">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                Portfolio
+            </small>
+
+
+            <h2>
+                My Creative Projects
+            </h2>
+
+
+            <p>
+                Some of the design and video projects
+                I have worked on while learning and
+                developing my skills.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- ================================================= -->
+            <!-- PROJECT 1 -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+
+                    <div class="project-image-wrapper">
+
+                        <img
+                            src="images/food post.jpg"
+                            class="project-image"
+                            alt="Food Poster Design">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h4>
+                            Food Poster
+                        </h4>
+
+
+                        <p>
+                          A delicious “This or That” paneer post comparing Paneer Butter Masala and Kadai Paneer to engage food lovers and encourage them to choose their favourite.
+                        </p>
+
+
+                      
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PROJECT 2 -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+
+                    <div class="project-image-wrapper">
+
+                        <img
+                            src="images/SWIGGY POST.png"
+                            class="project-image"
+                            alt="Swiggy Social Media Design">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h4>
+                            Swiggy Social Media Post
+                        </h4>
+
+
+                        <p>
+                            Social media advertisement concept
+                            designed for a food delivery brand.
+                        </p>
+
+
+                       
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PROJECT 3 -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+
+                    <div class="project-image-wrapper">
+
+                        <img
+                            src="images/AMAZON SALE POST.png"
+                            class="project-image"
+                            alt="Amazon Advertisement">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h4>
+                            Amazon Advertisement
+                        </h4>
+
+
+                        <p>
+                            Promotional video project created
+                            with focus on product presentation
+                            and visual editing.
+                        </p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PROJECT 4 -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+
+                    <div class="project-image-wrapper">
+
+                        <img
+                            src="images/RUCHI VISITING CARD.jpg"
+                            class="project-image"
+                            alt="Visiting Card Design">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h4>
+                            Pizza Advertisement
+                        </h4>
+
+
+                        <p>
+                            visiting card design for professional work and brand identity.
+                        </p>
+
+
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PROJECT 5 -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+
+                    <div class="project-image-wrapper">
+
+                        <img
+                            src="images/india gate sketch.png"
+                            class="project-image"
+                            alt="India Gate Photoshop Sketch">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h4>
+                            India Gate Sketch
+                        </h4>
+
+
+                        <p>
+                            Digital sketch artwork created
+                            using Adobe Photoshop with a focus
+                            on detailed visual composition.
+                        </p>
+
+
+                      
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================================= -->
+            <!-- PROJECT 6 -->
+            <!-- ================================================= -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="project-card">
+
+
+                    <div class="project-image-wrapper">
+
+                        <img
+                            src="images/bulb.png"
+                            class="project-image"
+                            alt="Bulb manipulation Design">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h4>
+                           Manipulation Design
+                        </h4>
+
+
+                        <p>
+                            Creative product advertisements
+                            and motion graphic videos created
+                            as part of my video editing practice.
+                        </p>
+
+
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- EDUCATION -->
+<!-- ========================================================= -->
+
+<section id="education">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                Education
+            </small>
+
+
+            <h2>
+                My Education
+            </h2>
+
+
+            <p>
+                My academic and professional
+                learning background.
+            </p>
+
+        </div>
+
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="year">
+                    2024 - 2026
+                </div>
+
+
+                <h4>
+                    Advanced Diploma in Website Engineering
+                </h4>
+
+
+                <p>
+                    Indian Institute of Computer Science
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="year">
+                    Currently Pursuing
+                </div>
+
+
+                <h4>
+                    B.A. (Hons.) Political Science
+                </h4>
+
+
+                <p>
+                    University of Delhi (DU)
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="year">
+                    2022
+                </div>
+
+
+                <h4>
+                    Class XII
+                </h4>
+
+
+                <p>
+                    CBSE — 81%
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="year">
+                    2020
+                </div>
+
+
+                <h4>
+                    Class X
+                </h4>
+
+
+                <p>
+                    CBSE — 80%
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="year">
+                    Professional Qualification
+                </div>
+
+
+                <h4>
+                    Advanced Diploma in Web Designing
+                </h4>
+
+
+                <p>
+                    ADWE — Web Designing & Development
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- CONTACT -->
+<!-- ========================================================= -->
+
+<section
+    id="contact"
+    class="contact-section">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                Contact
+            </small>
+
+
+            <h2>
+                Let's Work Together
+            </h2>
+
+
+            <p>
+                Have a design or video project?
+                Feel free to get in touch with me.
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-card">
+
+
+            <div class="contact-item">
+
+                <i class="bi bi-person"></i>
+
+
+                <div>
+
+                    <h6>
+                        Name
+                    </h6>
+
+
+                    <p>
+                        Ruchi Negi
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <i class="bi bi-geo-alt"></i>
+
+
+                <div>
+
+                    <h6>
+                        Location
+                    </h6>
+
+
+                    <p>
+                        Delhi, India
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <i class="bi bi-envelope"></i>
+
+
+                <div>
+
+                    <h6>
+                        Email
+                    </h6>
+
+
+                    <p>
+                        ruchi.ng24021@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <i class="bi bi-briefcase"></i>
+
+
+                <div>
+
+                    <h6>
+                        Available For
+                    </h6>
+
+
+                    <p>
+                        Graphic Design & Video Editing Opportunities
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+           
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+
+<footer>
+
+    <p class="mb-0">
+
+        © 2026
+
+        <strong>
+            Ruchi Negi
+        </strong>.
+
+        All Rights Reserved.
+
+    </p>
+
+
+    <p class="mb-0 mt-2">
+
+        Graphic Designer • Video Editor • Web Designer
+
+    </p>
+
+</footer>
+
+
+
+<!-- ========================================================= -->
+<!-- BOOTSTRAP JS -->
+<!-- ========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<script>
+
+    /* Close mobile navbar after clicking link */
+
+    document
+        .querySelectorAll('.nav-link')
+        .forEach(function(link) {
+
+            link.addEventListener(
+                'click',
+                function() {
+
+                    let navbar =
+                        document.querySelector(
+                            '.navbar-collapse'
+                        );
+
+
+                    if (navbar.classList.contains('show')) {
+
+                        new bootstrap
+                            .Collapse(navbar)
+                            .hide();
+
+                    }
+
+                }
+            );
+
+        });
+
+</script>
+
+
+</body>
+
+</html>
